@@ -69,6 +69,42 @@
             60% { transform: rotate(0deg); }
             100% { transform: rotate(0deg); }
         }
+        .projects-section {
+            margin-top: 2rem;
+        }
+        .project-card {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        .project-title {
+            color: #2d3748;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .project-description {
+            color: #4a5568;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+        .tech-stack {
+            font-size: 0.85rem;
+            color: #718096;
+        }
+        .tech-badge {
+            background: rgba(0, 0, 0, 0.05);
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            margin-right: 0.5rem;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
     </style>
 </head>
 <body>
@@ -107,6 +143,45 @@
                             <a href="https://www.manhattan-nyc.com" class="btn btn-primary btn-custom">
                                 <i class="bi bi-globe"></i> Manhattan NYC
                             </a>
+                        </div>
+
+                        <!-- Projeler bölümü -->
+                        <div class="projects-section">
+                            <h2 class="h3 mb-4">Developed Projects</h2>
+                            
+                            <div class="project-card text-start">
+                                <h3 class="project-title">Manhattan NYC</h3>
+                                <p class="project-description">
+                                    A comprehensive business directory for Manhattan, featuring detailed listings of restaurants, 
+                                    attractions, and local businesses. Built with modern web technologies and focused on user experience.
+                                </p>
+                                <div class="tech-stack mb-3">
+                                    <span class="tech-badge">PHP</span>
+                                    <span class="tech-badge">MySQL</span>
+                                    <span class="tech-badge">Bootstrap</span>
+                                    <span class="tech-badge">JavaScript</span>
+                                </div>
+                                <a href="https://www.manhattan-nyc.com" class="btn btn-sm btn-outline-primary" target="_blank">
+                                    <i class="bi bi-box-arrow-up-right"></i> Visit Site
+                                </a>
+                            </div>
+                            
+                            <div class="project-card text-start">
+                                <h3 class="project-title">Milli Parklar</h3>
+                                <p class="project-description">
+                                    An informative platform about national parks, providing detailed information about 
+                                    Turkey's natural heritage, hiking trails, and conservation efforts.
+                                </p>
+                                <div class="tech-stack mb-3">
+                                    <span class="tech-badge">WordPress</span>
+                                    <span class="tech-badge">PHP</span>
+                                    <span class="tech-badge">SEO</span>
+                                    <span class="tech-badge">Content Management</span>
+                                </div>
+                                <a href="https://www.milliparklar.com" class="btn btn-sm btn-outline-primary" target="_blank">
+                                    <i class="bi bi-box-arrow-up-right"></i> Visit Site
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
